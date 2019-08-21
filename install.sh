@@ -68,8 +68,6 @@ print_modname() {
 }
 
 set_permissions() {
-  : # Remove this if adding to this function
-
   # Note that all files/folders have the $UNITY prefix - keep this prefix on all of your files/folders
   # Also note the lack of '/' between variables - preceding slashes are already included in the variables
   # Use $VEN for vendor (Do not use /system$VEN, the $VEN is set to proper vendor path already - could be /vendor, /system/vendor, etc.)
@@ -86,6 +84,8 @@ set_permissions() {
   # set_perm  <filename>                         <owner> <group> <permission> <contexts> (default: u:object_r:system_file:s0)
   
   # set_perm $UNITY/system/lib/libart.so 0 0 0644
+
+  set_perm_recursive $UNITY/system/xbin 0 0 0755 0755
 }
 
 # Custom Variables for Install AND Uninstall - Keep everything within this function - runs before uninstall/install
