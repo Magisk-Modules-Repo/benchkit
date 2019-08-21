@@ -3,9 +3,9 @@
 A developer-centric toolkit module for Android to facilitate in-depth profiling and
 benchmarking.
 
-This module uses Unity Installer, which means that it can be installed irrespective of
-the root solution you are using — it will install as a Magisk module when possible, and
-fall back to installing to `/system` directly if that isn't possible.
+This module uses the Unity Installer template, which means that it can be installed
+irrespective of the root solution you are using — it will install as a Magisk module
+when possible, and fall back to installing to `/system` directly if that isn't possible.
 
 CPU architectures other than AArch64 are **NOT** supported! There are no plans to
 support them at this time.
@@ -31,8 +31,8 @@ Command-line utilities:
 
 Android apps:
 
-- [UIBench](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/TouchLatency/): Google's app (from AOSP) for testing various mobile workloads and UI rendering tasks
-- [TouchLatency](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/UiBench/): Google's app (from AOSP) for testing touch latency as well as frame rendering times and missed frames
+- [UIBench](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/UiBench/): Google's app (from AOSP) for testing various mobile workloads and UI rendering tasks
+- [TouchLatency](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/TouchLatency/): Google's app (from AOSP) for testing touch latency as well as frame rendering times and missed frames
 
 All native executables have been stripped of symbols and DWARF debug info to reduce size.
 
