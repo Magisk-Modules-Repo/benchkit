@@ -60,10 +60,37 @@ REPLACE="
 # Custom Logic
 ##########################################################################################
 
+center_and_print_min() {
+  ui_print " "
+  local NEW CHARS SPACES
+  for i in version author; do
+    NEW=$(grep_prop $i $TMPDIR/module.prop)
+    [ "$i" == "author" ] && NEW="by ${NEW}"
+    CHARS=$((${#NEW}-$(echo "$NEW" | tr -cd "©®™" | wc -m)))
+    SPACES=""
+    if [ $CHARS -le 40 ]; then
+      for j in $(seq $(((40-$CHARS) / 2))); do
+        SPACES="${SPACES} "
+      done
+    fi
+    ui_print "$SPACES$NEW$SPACES"
+  done
+  ui_print " "
+}
+
 # Set what you want to display when installing your module
 
 print_modname() {
-  center_and_print # Replace this line if using custom print stuff
+  cat <<END
+
+ ____                  _     _    _ _
+| __ )  ___ _ __   ___| |__ | | _(_) |_
+|  _ \ / _ \ '_ \ / __| '_ \| |/ / | __|
+| |_) |  __/ | | | (__| | | |   <| | |_
+|____/ \___|_| |_|\___|_| |_|_|\_\_|\__|
+END
+  center_and_print_min
+
   unity_main # Don't change this line
 }
 
