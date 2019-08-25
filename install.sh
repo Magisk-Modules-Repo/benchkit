@@ -85,6 +85,7 @@ set_permissions() {
   
   # set_perm $UNITY/system/lib/libart.so 0 0 0644
 
+  set_perm_recursive $UNITY/system/bin 0 0 0755 0755
   set_perm_recursive $UNITY/system/xbin 0 0 0755 0755
 }
 
