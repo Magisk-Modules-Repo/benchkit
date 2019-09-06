@@ -52,6 +52,9 @@ Command-line utilities:
 
 Android apps:
 
+- [JankBench](https://android.googlesource.com/platform/frameworks/base/+/android-9.0.0_r47/tests/JankBench) (Benchmark):
+  [joshuous](https://github.com/joshuous/)' modified version of Google's AOSP app for
+  automating some tests from UIBench in a reproducible manner
 - [TouchLatency](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/TouchLatency/) (TouchLatency):
   Google's app (from AOSP) for testing touch latency as well as frame rendering times
   and missed frames
