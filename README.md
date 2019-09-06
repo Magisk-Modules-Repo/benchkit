@@ -56,10 +56,10 @@ Android apps:
   [joshuous](https://github.com/joshuous/)' modified version of Google's AOSP app for
   automating some tests from UIBench in a reproducible manner
 - [TouchLatency](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/TouchLatency/) (TouchLatency):
-  Google's app (from AOSP) for testing touch latency as well as frame rendering times
-  and missed frames
+  Google's AOSP app for testing touch latency as well as frame rendering times and
+  missed frames
 - [UIBench](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/UiBench/) (UiBench):
-  Google's app (from AOSP) for testing various mobile workloads and UI rendering tasks
+  Google's AOSP app for testing various mobile workloads and UI rendering tasks
 
 All native executables have been stripped of symbols and DWARF debug info to reduce size.
 
