@@ -51,16 +51,18 @@ is_legacy_script() {
   return $?
 }
 
-# Print header
-ui_print
-ui_print ' ____                  _     _    _ _   '
-ui_print '| __ )  ___ _ __   ___| |__ | | _(_) |_ '
-ui_print "|  _ \\ / _ \\ '_ \\ / __| '_ \\| |/ / | __|"
-ui_print '| |_) |  __/ | | | (__| | | |   <| | |_ '
-ui_print '|____/ \___|_| |_|\___|_| |_|_|\_\_|\__|'
-ui_print
-ui_print '           Powered by Magisk            '
-ui_print
+print_modname() {
+  local len
+  len=`echo -n $MODNAME | wc -c`
+  len=$((len + 2))
+  local pounds=`printf "%${len}s" | tr ' ' '*'`
+  ui_print "$pounds"
+  ui_print " $MODNAME "
+  ui_print "$pounds"
+  ui_print "*******************"
+  ui_print " Powered by Magisk "
+  ui_print "*******************"
+}
 
 # Preperation for flashable zips
 setup_flashable
@@ -103,6 +105,7 @@ if is_legacy_script; then
   . $TMPDIR/install.sh
 
   # Callbacks
+  print_modname
   on_install
 
   # Custom uninstaller
@@ -126,6 +129,8 @@ if is_legacy_script; then
   ui_print "- Setting permissions"
   set_permissions
 else
+  print_modname
+
   unzip -o "$ZIPFILE" customize.sh -d $MODPATH >&2
 
   if ! grep -q '^SKIPUNZIP=1$' $MODPATH/customize.sh 2>/dev/null; then
@@ -134,17 +139,11 @@ else
 
     # Default permissions
     set_perm_recursive $MODPATH 0 0 0755 0644
-
-    # Executables
-    set_perm_recursive $MODPATH/system/xbin 0 0 0755 0755
   fi
 
   # Load customization script
   [ -f $MODPATH/customize.sh ] && . $MODPATH/customize.sh
 fi
-
-# Fall back to bin if xbin isn't available
-[ -d /system/bin ] && [ ! -d /system/xbin ] && mv $MODPATH/system/xbin $MODPATH/system/bin
 
 # Handle replace folders
 for TARGET in $REPLACE; do
