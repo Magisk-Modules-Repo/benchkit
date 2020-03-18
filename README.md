@@ -49,6 +49,9 @@ Command-line utilities:
   A program to stress-test various hardware and kernel subsystems
 - [sysbench](https://github.com/akopytov/sysbench) (`sysbench`):
   A scriptable database and system performance benchmark with several built-in scripts
+- [hyperfine](https://github.com/sharkdp/hyperfine) (`hyperfine`):
+  An advanced benchmark runner that makes it easy to run benchmarks in a
+  statistically sound manner and export results into machine-readable formats
 
 Android apps:
 
