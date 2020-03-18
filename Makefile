@@ -13,7 +13,7 @@ zip: $(ZIP)
 
 install: $(ZIP)
 	adb push $(ZIP) /sdcard/
-	echo 'unzip -p "/sdcard/$(ZIP)" META-INF/com/google/android/update-binary | sh /proc/self/fd/0 x x "/sdcard/$(ZIP)"' | adb shell su -c sh -
+	echo '/sbin/.core/busybox/unzip -p "/sdcard/$(ZIP)" META-INF/com/google/android/update-binary | sh /proc/self/fd/0 x x "/sdcard/$(ZIP)"' | adb shell su -c sh -
 
 clean:
 	rm -f *.zip
