@@ -1,7 +1,7 @@
 id=benchkit
 name=Benchkit
-version=v2.2.1
-versionCode=200201
+version=v2.3.0
+versionCode=200300
 author=kdrag0n
 description=A developer-centric toolkit to facilitate in-depth profiling and benchmarking.
 support=https://t.me/kdrag0n
