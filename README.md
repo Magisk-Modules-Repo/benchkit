@@ -64,8 +64,11 @@ Android apps:
   missed frames
 - [UIBench](https://android.googlesource.com/platform/frameworks/base/+/refs/tags/android-9.0.0_r47/tests/UiBench/) (UiBench):
   Google's AOSP app for testing various mobile workloads and UI rendering tasks
+- [Audio Latency Test](https://superpowered.com/latency) (Latency Test):
+  Superpowered's app for testing end-to-end (i.e. speaker to microphone) audio latency
 
 All native executables have been stripped of symbols and DWARF debug info to reduce size.
+For Android apps, the visible launcher name is shown in parantheses.
 
 ## Links
 
