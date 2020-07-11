@@ -66,6 +66,8 @@ Android apps:
   Google's AOSP app for testing various mobile workloads and UI rendering tasks
 - [Audio Latency Test](https://superpowered.com/latency) (Latency Test):
   Superpowered's app for testing end-to-end (i.e. speaker to microphone) audio latency
+- [SynthMark](https://github.com/google/synthmark) (SynthMark):
+  Google's app for benchmarking CPU performance under real-time audio workloads
 
 All native executables have been stripped of symbols and DWARF debug info to reduce size.
 For Android apps, the visible launcher name is shown in parantheses.
