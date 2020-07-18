@@ -48,6 +48,8 @@ Command-line utilities:
 - [hyperfine](https://github.com/sharkdp/hyperfine):
   An advanced benchmark runner that makes it easy to run benchmarks in a
   statistically sound manner and export results into machine-readable formats
+- [synthmark](https://github.com/google/synthmark):
+  Google's app for benchmarking CPU performance under real-time audio workloads
 
 Android apps:
 
