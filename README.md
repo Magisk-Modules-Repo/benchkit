@@ -9,6 +9,8 @@ CPU architectures other than little-endian AArch64 are **NOT** supported!
 
 Command-line utilities:
 
+- [Bonnie++](https://doc.coker.com.au/projects/bonnie/):
+  A general filesystem and I/O benchmark
 - [callbench](https://github.com/kdrag0n/callbench):
   A program to measure the speed of simple time syscalls and vDSO calls, as well as
   basic file I/O using both `mmap(2)` and `read(2)`
