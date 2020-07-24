@@ -20,8 +20,7 @@ Command-line utilities:
   A simple CPU integer performance benchmark typically used for calculating CPU
   capacities for an EAS energy model
 - [Flexible I/O Tester](https://github.com/axboe/fio/tree/4e8c82b4e9804c52bf2c78327cc5bfca9d8aedfc) (`fio`):
-  A flexible generic I/O tester that can simulate a variety of configurable workloads,
-  created by Linux block subsystem maintainer [Jens Axboe](https://github.com/axboe)
+  A flexible generic I/O tester that can simulate a variety of configurable workloads
 - [GTcycles](https://github.com/kdrag0n/gtcycles):
   A tool to measure the frequency of the CPU's generic timer
 - [Hackbench](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/tree/src/hackbench/hackbench.c?h=stable/devel/v1.0.1&id=34caa080e0472cf480f2e90538aaf300f9ae487b):
