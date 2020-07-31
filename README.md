@@ -13,7 +13,8 @@ Command-line utilities:
   A general filesystem and I/O benchmark
 - [callbench](https://github.com/kdrag0n/callbench):
   A program to measure the speed of simple time syscalls and vDSO calls, as well as
-  basic file I/O using both `mmap(2)` and `read(2)`
+  basic file I/O using both `mmap(2)` and `read(2)`. Note that this program has
+  a 32-bit version installed as `callbench32` for testing 32-bit vDSOs.
 - [cyclictest](https://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git/tree/src/cyclictest/cyclictest.c?h=stable/devel/v1.0.1):
   A program to measure timer expiration delay, useful for real-time latency testing
 - [Dhrystone](https://github.com/ARM-software/workload-automation/blob/e387e3d9b79e936b50e5985c369aad1654cc9c06/wa/workloads/dhrystone/src/dhrystone.c):
