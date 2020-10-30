@@ -32,8 +32,6 @@ Command-line utilities:
   Flexible real-time application simulator designed to replicate typical mobile workloads in a reproducible manner. Some reference tests from ARM are available in `/system/etc/rt-app`.
 - [schbench](https://github.com/kdrag0n/schbench/blob/8d075b39d6a4cbb362b24912eddcdd362bf09649/schbench.c):
   Scheduler wakeup latency benchmark
-- [SLABtop](https://gitlab.com/procps-ng/procps/blob/2e7f38707a1fa5949ccf3655fa33a90c8b8a2ffc/slabtop.c):
-  Show kernel SLAB memory usage details (requires `CONFIG_SLUB_DEBUG=y` in kernel)
 - [stress-ng](https://kernel.ubuntu.com/git/cking/stress-ng.git/):
   Stress-test various hardware and kernel subsystems
 - [sysbench](https://github.com/akopytov/sysbench):
