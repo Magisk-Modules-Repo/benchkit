@@ -54,6 +54,8 @@ Android apps:
   Test end-to-end (i.e. speaker to microphone) audio latency (from Superpowered)
 - [SynthMark](https://github.com/google/synthmark):
   Benchmark CPU performance with real-time audio workloads (by Google; GUI version)
+- [OboeTester](https://github.com/google/oboe):
+  Various audio-related tests including latency and glitch testing (by Google)
 
 ## Links
 
